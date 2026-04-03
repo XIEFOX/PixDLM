@@ -7,11 +7,14 @@
 
 ## ✨ Authors
 
-**Shuyan Ke*, Yifan Mei*, Changli Wu, Yonghan Zheng, Jiayi Ji, Liujuan Cao†, Rongrong Ji†**
-Xiamen University, National University of Singapore
+**Shuyan Ke**<sup>1</sup>, **Yifan Mei**<sup>1</sup>, **Changli Wu**<sup>1, 2</sup>, **Yonghan Zheng**<sup>1</sup>, **Jiayi Ji**<sup>1</sup>, **Liujuan Cao**<sup>1</sup>, **Rongrong Ji**<sup>1</sup> ✉
 
-* Equal contribution
-† Corresponding authors
+<sup>1</sup> Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University, 361005, P.R. China  
+<sup>2</sup> Shanghai Innovation Institute  
+
+*( ✉ Corresponding author )*
+
+> 📧 **Contact:** `{keshuyan, meiyifan, wuchangli, zhengyonghan}@stu.xmu.edu.cn`, `jjyxmu@gmail.com`, `{caoliujuan, rrji}@xmu.edu.cn`
 
 ---
 
@@ -26,10 +29,11 @@ Xiamen University, National University of Singapore
 
 ## 📢 News
 
-* **[2026.01]** 🎉 PixDLM is accepted by **CVPR 2026**
-* **[2026.03]** DRSeg dataset released
-* **[2026.04]** Code released
-* **[2026.04]** Pretrained models available
+* **[2026.04]** Pretrained models and inference code are available!
+* **[2026.04]** Training code released.
+* **[2026.03]** 🧩 [DRSeg dataset](https://huggingface.co/datasets/WhynotHug/DRSeg) released on HuggingFace.
+* **[2026.01]** 🎉 PixDLM is accepted by **CVPR 2026**!
+
 
 ---
 
@@ -205,12 +209,6 @@ sh eval.sh
 
 ---
 
-## 📈 Results
-
-> *Coming Soon*
-
----
-
 ## 🔮 Future Work
 
 * Scaling UAV reasoning datasets
@@ -224,7 +222,7 @@ sh eval.sh
 If you find our work useful, please consider citing:
 
 ```bibtex
-@inproceedings{pixdlm2026,
+@inproceedings{ke2026pixdlm,
   title={PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation},
   author={Ke, Shuyan and Mei, Yifan and Wu, Changli and Zheng, Yonghan and Ji, Jiayi and Cao, Liujuan and Ji, Rongrong},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
