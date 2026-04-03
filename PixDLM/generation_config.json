@@ -1,0 +1,30 @@
+{
+  "attn_implementation": "flash_attention_2",
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "image_feature_scale_num": 3,
+  "max_length": 4096,
+  "out_dim": 256,
+  "pad_token_id": 0,
+  "pad_train_clip_images": false,
+  "resize_vision_tower": true,
+  "resize_vision_tower_size": 448,
+  "seg_token_idx": [
+    32000,
+    32001,
+    32002,
+    32003,
+    32004,
+    32005,
+    32006,
+    32007,
+    32008
+  ],
+  "seg_token_num": 3,
+  "separate_mm_projector": false,
+  "three_level_multi_scale_decoder": true,
+  "train_mask_decoder": true,
+  "transformers_version": "4.31.0",
+  "vision_tower": "openai/clip-vit-large-patch14",
+  "vision_tower_for_mask": true
+}
