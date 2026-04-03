@@ -1,7 +1,12 @@
 # 📄 [CVPR 2026] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation
 
-> **Official PyTorch Implementation of our CVPR 2026 paper**
-> *PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation*
+<div align="center">
+
+[![Paper](https://img.shields.io/badge/Paper-Coming_Soon-blue)](#)
+[![Dataset](https://img.shields.io/badge/Dataset-DRSeg-green)](https://huggingface.co/datasets/WhynotHug/DRSeg)
+[![Model](https://img.shields.io/badge/Model-PixDLM-orange)](https://huggingface.co/WhynotHug/PixDLM)
+
+</div>
 
 ---
 
@@ -11,19 +16,6 @@
 
 <sup>1</sup> Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University, 361005, P.R. China  
 <sup>2</sup> Shanghai Innovation Institute  
-
-*( ✉ Corresponding author )*
-
-> 📧 **Contact:** `{keshuyan, meiyifan, wuchangli, zhengyonghan}@stu.xmu.edu.cn`, `jjyxmu@gmail.com`, `{caoliujuan, rrji}@xmu.edu.cn`
-
----
-
-## 🔗 Links
-
-* 📄 Paper: *Coming Soon (arXiv)*
-* 🌐 Project Page: *Coming Soon*
-* 📊 Pretrained Models: *Coming Soon*
-* 🤗 DRSeg Dataset: https://huggingface.co/datasets/WhynotHug/DRSeg
 
 ---
 
@@ -44,91 +36,31 @@ Understanding complex aerial scenes requires not only pixel-level perception but
 In this project, we introduce **PixDLM**, a **Dual-Path Multimodal Language Model** designed for **UAV reasoning segmentation**, a new task that integrates instruction following, reasoning, and fine-grained segmentation.
 
 PixDLM explicitly models the synergy between:
+* **Semantic reasoning** (Language-aligned reasoning path)
+* **Fine-grained perception** (Pixel-level visual path)
 
-* **semantic reasoning (language-aligned reasoning path)**
-* **fine-grained perception (pixel-level visual path)**
-
-enabling robust performance under challenging UAV scenarios.
+This dual-path design enables robust performance under challenging UAV scenarios.
 
 ---
 
 ## 🌟 Highlights
 
-* **📌 New Task**
-  We formalize **UAV Reasoning Segmentation** as an instruction-driven pixel-level prediction task, highlighting the limitations of existing reasoning models under aerial viewpoints.
-
+* **📌 New Task: UAV Reasoning Segmentation**
+  We formalize it as an instruction-driven pixel-level prediction task, highlighting the limitations of existing reasoning models under aerial viewpoints.
 * **📊 New Dataset: DRSeg**
-  We introduce the first large-scale UAV reasoning segmentation benchmark with:
-
-  * high-resolution aerial imagery
-  * chain-of-thought (CoT) aligned reasoning annotations
-
+  The first large-scale UAV reasoning segmentation benchmark featuring high-resolution aerial imagery and chain-of-thought (CoT) aligned reasoning annotations.
 * **🧠 New Model: PixDLM**
-  A **Dual-Path pixel-level MLLM** that:
-
-  * decouples reasoning and perception
-  * enables structured reasoning-guided segmentation
-  * achieves strong performance on both UAV and referring segmentation benchmarks
+  A **Dual-Path pixel-level MLLM** that decouples reasoning and perception, enabling structured reasoning-guided segmentation with strong performance on both UAV and referring segmentation benchmarks.
 
 ---
 
 ## 🗂️ DRSeg Dataset
 
-DRSeg is a large-scale benchmark designed for UAV reasoning segmentation.
+DRSeg is a large-scale benchmark designed specifically for UAV reasoning segmentation. 
 
-### 📦 Dataset Statistics
-
-* **10,000** high-resolution UAV images
-* **10,000** instance masks
-* **10,000** reasoning QA pairs
-
-Each image contains a single annotated target for reasoning, while maintaining high object density with multiple distractors.
-
----
-
-### 🧩 Reasoning Annotation
-
-The dataset provides **chain-of-thought aligned supervision**, covering three reasoning types:
-
-* **Spatial reasoning**: 33.33%
-* **Attribute reasoning**: 33.34%
-* **Scene-level reasoning**: 33.33%
-
----
-
-### 📐 UAV-specific Properties
-
-* **Multi-altitude distribution**:
-
-  * 30m: 31.44%
-  * 60m: 25.45%
-  * 100m: 43.11%
-
-* **Small-object dominance**:
-
-  * 58.08% instances occupy < 2% of image area
-
-These properties make DRSeg particularly challenging for both perception and reasoning.
-
----
-
-## 🏗️ Model Architecture
-
-PixDLM adopts a **Dual-Path architecture**:
-
-* **Reasoning Path**
-
-  * Language-guided reasoning
-  * Instruction understanding
-  * Chain-of-thought generation
-
-* **Perception Path**
-
-  * High-resolution visual encoding
-  * Pixel-level feature extraction
-  * Fine-grained segmentation
-
-The two paths are **jointly optimized** to align reasoning with pixel-level prediction.
+* **Statistics**: 10,000 high-resolution UAV images | 10,000 instance masks | 10,000 reasoning QA pairs.
+* **Reasoning Types**: Spatial reasoning (33.33%), Attribute reasoning (33.34%), Scene-level reasoning (33.33%).
+* **UAV-specific Properties**: Multi-altitude distribution (30m, 60m, 100m) and small-object dominance (58.08% of instances occupy < 2% of the image area).
 
 ---
 
@@ -143,6 +75,41 @@ pip install flash-attn --no-build-isolation
 ```
 
 ---
+
+## 📁 Data & Weights Preparation
+
+Please download:
+
+* 🤗 **Pretrained weights** from our HuggingFace model page
+* 📊 **DRSeg dataset** from our HuggingFace dataset page
+
+---
+
+### 📂 Directory Structure
+
+Organize your project directory as follows:
+
+```plaintext
+PixDLM/
+├── PixDLM/
+│   └── pytorch_model.bin        <-- Place the pretrained weights here
+├── data/
+│   └── DRSeg/                   <-- Place the dataset here
+├── model/
+├── train.sh
+├── eval.sh
+└── ...
+```
+
+> ⚠️ **Important:**
+> Make sure the pretrained weight file `pytorch_model.bin` is placed under:
+>
+> ```
+> PixDLM/PixDLM/pytorch_model.bin
+> ```
+>
+> Otherwise, the model will not be loaded correctly.
+
 
 ## 🏋️ Training
 
