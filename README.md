@@ -22,9 +22,7 @@
 ## 📢 News
 
 * **[2026.04]** 🔥 PixDLM is selected as **CVPR 2026 Highlight**!
-* **[2026.04]** 📄 Paper is available on arXiv:  
-  - https://arxiv.org/abs/2604.15670  
-  - https://arxiv.org/pdf/2604.15670
+* **[2026.04]** 📄 Paper is available on [arXiv](https://arxiv.org/pdf/2604.15670).
 * **[2026.04]** Pretrained models and inference code are available!
 * **[2026.04]** Training code released.
 * **[2026.03]** 🧩 [DRSeg dataset](https://huggingface.co/datasets/WhynotHug/DRSeg) released on HuggingFace.
