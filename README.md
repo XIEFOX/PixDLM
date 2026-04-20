@@ -1,4 +1,4 @@
-# 📄 [CVPR 2026] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation
+# 📄 [CVPR 2026 Highlight] PixDLM: A Dual-Path Multimodal Language Model for UAV Reasoning Segmentation
 
 <div align="center">
 
