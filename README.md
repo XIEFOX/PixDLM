@@ -21,6 +21,8 @@
 
 ## 📢 News
 
+* **[2026.07]** 📰 We have improved the open-source code, and you can get started quickly on [Hugging Face] (https://huggingface.co/WhynotHug/PixDLM)! It contains all the model code, weights, and data.
+* **[2026.06]** 😄 We Are a CVPR Compute Transparency Champion!
 * **[2026.04]** 🔥 PixDLM is selected as **CVPR 2026 Highlight**!
 * **[2026.04]** 📄 Paper is available on [arXiv](https://arxiv.org/pdf/2604.15670).
 * **[2026.04]** Pretrained models and inference code are available!
