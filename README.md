@@ -14,7 +14,7 @@
 
 **Shuyan Ke**<sup>1</sup>, **Yifan Mei**<sup>1</sup>, **Changli Wu**<sup>1, 2</sup>, **Yonghan Zheng**<sup>1</sup>, **Jiayi Ji**<sup>1</sup>, **Liujuan Cao**<sup>1</sup>, **Rongrong Ji**<sup>1</sup> ✉
 
-<sup>1</sup> Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University, 361005, P.R. China  
+<sup>1</sup> Key Laboratory of Multimedia Trusted Perception and Efficient Computing, Ministry of Education of China, Xiamen University  
 <sup>2</sup> Shanghai Innovation Institute
 
 ---
